@@ -1,0 +1,23 @@
+# Setup
+title:               Japán
+tagline:             
+description:         'Kalandjaim Japánban'
+url:                 https://hu.szabo.jp
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Szabó Márk
+  url:               https://twitter.com/torin42
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+collections:
+- images
+
+# Custom vars
+version:             1.1.0

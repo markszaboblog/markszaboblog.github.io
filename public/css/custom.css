@@ -1,0 +1,33 @@
+.autogallery {
+  text-align: center;
+  background-color: lightgray;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.autogallery-img {
+  width: 45%;
+  display: inline-block;
+  margin: 0.2em;
+}
+
+.inline-image-parent {
+  text-align: center;
+  background-color: lightgray;
+  padding-bottom: 0.2em;
+  border-radius: 10px;
+}
+
+.text-after-img {
+  font-style: italic;
+}
+
+.readmore {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px 20px 5px 20px;
+}
+
+.readmore:hover {
+  background-color: lightgray;
+}
