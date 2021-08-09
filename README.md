@@ -238,7 +238,7 @@ https://www.youtube.com/watch?v=U0CL-ZSuCrQ
 <p><!-- /wp:embed --></p>
 ```
 
-Sometimes the YouTube URL was like https://youtu.be/Dd7FeNkoVjI, which had to be handled too. So I did a global search and replace from 
+Sometimes the YouTube URL was like https://youtu.be/Dd7FeNkoVjI, which had to be handled too. So I did a global search and replace (with VS Code's built-in tool) from 
 
 ```
 <div class="wp-block-embed__wrapper">\n(?:https://www.youtube.com/watch\?v=(\S+)|https://youtu.be/(\S+))\n</div>
@@ -248,4 +248,16 @@ to
 
 ```
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/$1$2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
+
+Next was all the links between posts, which were all absolute (like https://japan.szabo-simon.hu/2021/05/04/biwaichi-biciklivel-a-biwa-to-korul/) and as I was updating the domain, I had to update these too. I decided to use this opportunity to also make them relative (e.g. /2021/05/04/biwaichi-biciklivel-a-biwa-to-korul/) with this regex search and replace:
+
+```
+https://japan.szabo-simon.hu([^"]+/)"
+```
+
+to
+
+```
+$1"
 ```
