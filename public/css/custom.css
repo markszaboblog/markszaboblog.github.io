@@ -6,7 +6,8 @@
 }
 
 .autogallery-img {
-  width: 45%;
+  max-width: 45%;
+  max-height: 15em;
   display: inline-block;
   margin: 0.2em;
 }
