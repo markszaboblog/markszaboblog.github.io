@@ -261,3 +261,13 @@ to
 ```
 $1"
 ```
+
+## Remove image EXIFs
+
+My photos have geotagging that I'd prefer not to have online, so I run this command before committing:
+
+```
+docker run --rm -v $(pwd):/srv -it jmoati/exiftool exiftool -all= -r -overwrite_original -ext jpg /srv/assets/
+```
+
+As a sideeffect this also reduces the filesize.
