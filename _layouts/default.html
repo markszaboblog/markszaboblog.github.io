@@ -11,10 +11,19 @@
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       <div class="masthead">
-        <div class="container">
+        <div class="container" id="topmenu">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small><a href="https://szabo.jp/">#🤖🇬🇧</a></small>
+            <p class="alignleft">
+              <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+              <small>
+                <small><a href="https://szabo.jp/">#🤖🇬🇧</a></small>
+              </small> 
+            </p>
+            <p class="alignright">
+              <small>
+                <a href="https://follow.it/https-hu-szabo-jp-atom-xml?action=followPub" id="followlink">✉️Feliratkozás</a>
+              </small>
+            </p>
           </h3>
         </div>
       </div>
